@@ -1,0 +1,122 @@
+.contact {
+    background-color: var(--color-secondary);
+}
+
+.contact .boxes {
+    max-width: var(--margin-limit);
+    margin: 0 auto;
+    color: white;
+    padding: var(--padding-limit);
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .about-box, 
+.contact .contact-box {
+    border-radius: 5px;
+    width: 100%;
+    padding: 70px 40px;
+    margin: 20px;
+}
+
+.contact .about-box {
+    border: 1px solid var(--color-text);
+    text-align: center;
+}
+
+.contact .about-box h2 {
+    font-size: 35px;
+}
+
+.contact .about-box img {
+    margin: 30px 0;
+}
+
+.contact .about-box p {
+    line-height: 25px;
+    font-size: var(--fontsize-paragraph);
+}
+
+.contact .contact-box {
+    border: 1px solid var(--color-text);
+    text-align: end;
+}
+
+.contact .contact-box h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.contact .contact-box img {
+    margin: 30px auto;
+    display: block;
+}
+
+.contact .contact-box input{
+    margin-bottom: 100px;
+}
+
+.contact .contact-box input::placeholder, 
+.contact .contact-box textarea::placeholder {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact .contact-box input,
+.contact .contact-box textarea {
+    color: white;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-text);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+    resize: none;
+}
+
+.contact .contact-box button {
+    margin-top: 15px;
+    padding: 20px;
+    color: var(--color-primary);
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    text-align: end;
+    transition: all 500ms ease-out;
+    
+}
+
+.contact .contact-box button:hover {
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .contact .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .about-box,
+    .contact .contact-box {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width:768px) {
+    .contact .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .about-box,
+    .contact .contact-box {
+        width: 100%;
+    }
+}

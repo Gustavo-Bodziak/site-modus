@@ -1,0 +1,78 @@
+.clients {
+    padding: var(--padding-limit);
+    text-align: center;
+}
+
+.clients h2 {
+    font-size: var(--fontsize-titles);
+}
+
+.clients img {
+    margin: 30px 0;
+}
+
+.clients p {
+    line-height: 25px;
+    font-size: var(--fontsize-paragraph);
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+}
+
+.clients span {
+    color: var(--color-text);
+    font-style: italic;
+    display: block;
+    margin-top: 25px;
+}
+
+.clients .clients-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px ;
+}
+
+.clients .clients-icons img {
+    display: block;
+    margin: 0 90px;
+    max-width:100px;
+    max-height:70px;
+}
+
+
+
+@media (max-width: 480px) {
+    .clients .clients-icons {
+        flex-wrap: wrap;
+    }
+
+    .clients .clients-icons img {
+        margin: 20px 90px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .clients .clients-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clients .clients-icons img {
+        max-width: 100px;
+        max-height: 100px;
+        margin: 20px 90px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+    .clients .clients-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clients .clients-icons img {
+        max-width: 100px;
+        max-height: 100px;
+        margin: 20px 90px;
+    }
+}
